@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch42" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Simple Timer Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="SimpleTimerController" customModule="SimpleTimer_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="center" id="eIz-Cc-yfY">
+                            <items>
+                                <picker width="50" height="100" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="M37-uv-zZ5">
+                                    <connections>
+                                        <action selector="hourPickerDidChange:" destination="AgC-eL-Hgc" id="zQB-9p-YAQ"/>
+                                    </connections>
+                                </picker>
+                                <picker width="50" height="100" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="W0d-Ew-bOQ">
+                                    <connections>
+                                        <action selector="minPickerDidChange:" destination="AgC-eL-Hgc" id="YHB-Pc-HOI"/>
+                                    </connections>
+                                </picker>
+                                <picker width="50" height="100" alignment="left" focusStyle="sequence" indicatorMode="shownWhileFocused" id="2IS-xU-hPT">
+                                    <connections>
+                                        <action selector="secPickerDidChange:" destination="AgC-eL-Hgc" id="rqs-4C-OiK"/>
+                                    </connections>
+                                </picker>
+                            </items>
+                        </group>
+                        <timer width="119" alignment="center" textAlignment="center" id="6Zg-XU-hqd"/>
+                        <group width="1" alignment="center" id="jZU-gC-Qcg">
+                            <items>
+                                <button width="50" alignment="left" title="Start" id="S5K-3d-3tF">
+                                    <connections>
+                                        <action selector="startTimer" destination="AgC-eL-Hgc" id="nP0-f7-SVM"/>
+                                    </connections>
+                                </button>
+                                <button width="54" alignment="left" title="Pause" id="qJB-vD-gA3">
+                                    <connections>
+                                        <action selector="pauseTimer" destination="AgC-eL-Hgc" id="yoe-kQ-w9m"/>
+                                    </connections>
+                                </button>
+                                <button width="50" alignment="left" title="Stop" id="Ya9-Gp-AsI"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="hourPicker" destination="M37-uv-zZ5" id="GiF-bB-lTn"/>
+                        <outlet property="minutePicker" destination="W0d-Ew-bOQ" id="vY4-xC-bAw"/>
+                        <outlet property="pauseButton" destination="qJB-vD-gA3" id="tB4-20-1Ou"/>
+                        <outlet property="secondPicker" destination="2IS-xU-hPT" id="nlx-ba-QMA"/>
+                        <outlet property="startButton" destination="S5K-3d-3tF" id="tkE-zZ-EF4"/>
+                        <outlet property="stopButton" destination="Ya9-Gp-AsI" id="Fqe-tG-JFh"/>
+                        <outlet property="timer" destination="6Zg-XU-hqd" id="aYF-cW-Eab"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="219.69230769230771" y="343.92307692307696"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="IdU-wH-bcW"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="IdU-wH-bcW" id="JKC-fr-R95"/>
+                        <segue destination="4sK-HA-Art" kind="relationship" relationship="dynamicNotificationInterface" id="kXh-Jw-8B1"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="220" y="643"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="ZPc-GJ-vnh">
+            <objects>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="SimpleTimer_WatchKit_App" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="468" y="643"/>
+        </scene>
+    </scenes>
+</document>

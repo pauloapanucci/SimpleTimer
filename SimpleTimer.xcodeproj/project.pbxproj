@@ -1,0 +1,836 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF58950D2040432A009C8B0E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58950C2040432A009C8B0E /* AppDelegate.swift */; };
+		FF58950F2040432A009C8B0E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58950E2040432A009C8B0E /* ViewController.swift */; };
+		FF5895122040432A009C8B0E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5895102040432A009C8B0E /* Main.storyboard */; };
+		FF5895142040432A009C8B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5895132040432A009C8B0E /* Assets.xcassets */; };
+		FF5895172040432A009C8B0E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5895152040432A009C8B0E /* LaunchScreen.storyboard */; };
+		FF5895222040432A009C8B0E /* SimpleTimerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5895212040432A009C8B0E /* SimpleTimerTests.swift */; };
+		FF58952D2040432A009C8B0E /* SimpleTimerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58952C2040432A009C8B0E /* SimpleTimerUITests.swift */; };
+		FF5895322040432A009C8B0E /* SimpleTimer WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FF5895312040432A009C8B0E /* SimpleTimer WatchKit App.app */; };
+		FF5895382040432A009C8B0E /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF5895362040432A009C8B0E /* Interface.storyboard */; };
+		FF58953A2040432A009C8B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF5895392040432A009C8B0E /* Assets.xcassets */; };
+		FF5895412040432A009C8B0E /* SimpleTimer WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF5895402040432A009C8B0E /* SimpleTimer WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF5895462040432A009C8B0E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5895452040432A009C8B0E /* InterfaceController.swift */; };
+		FF5895482040432A009C8B0E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5895472040432A009C8B0E /* ExtensionDelegate.swift */; };
+		FF58954A2040432A009C8B0E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF5895492040432A009C8B0E /* NotificationController.swift */; };
+		FF58954C2040432A009C8B0E /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58954B2040432A009C8B0E /* ComplicationController.swift */; };
+		FF58954E2040432A009C8B0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF58954D2040432A009C8B0E /* Assets.xcassets */; };
+		FF58956720404A68009C8B0E /* SimpleTimerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF58956620404A68009C8B0E /* SimpleTimerController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF58951E2040432A009C8B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5895012040432A009C8B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5895082040432A009C8B0E;
+			remoteInfo = SimpleTimer;
+		};
+		FF5895292040432A009C8B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5895012040432A009C8B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5895082040432A009C8B0E;
+			remoteInfo = SimpleTimer;
+		};
+		FF5895332040432A009C8B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5895012040432A009C8B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF5895302040432A009C8B0E;
+			remoteInfo = "SimpleTimer WatchKit App";
+		};
+		FF5895422040432A009C8B0E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF5895012040432A009C8B0E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF58953F2040432A009C8B0E;
+			remoteInfo = "SimpleTimer WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF5895562040432A009C8B0E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF5895412040432A009C8B0E /* SimpleTimer WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58955A2040432A009C8B0E /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FF5895322040432A009C8B0E /* SimpleTimer WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FF5895092040432A009C8B0E /* SimpleTimer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleTimer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF58950C2040432A009C8B0E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF58950E2040432A009C8B0E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FF5895112040432A009C8B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF5895132040432A009C8B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF5895162040432A009C8B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF5895182040432A009C8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF58951D2040432A009C8B0E /* SimpleTimerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5895212040432A009C8B0E /* SimpleTimerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerTests.swift; sourceTree = "<group>"; };
+		FF5895232040432A009C8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5895282040432A009C8B0E /* SimpleTimerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimpleTimerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF58952C2040432A009C8B0E /* SimpleTimerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerUITests.swift; sourceTree = "<group>"; };
+		FF58952E2040432A009C8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5895312040432A009C8B0E /* SimpleTimer WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleTimer WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5895372040432A009C8B0E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		FF5895392040432A009C8B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF58953B2040432A009C8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5895402040432A009C8B0E /* SimpleTimer WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleTimer WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF5895452040432A009C8B0E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		FF5895472040432A009C8B0E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		FF5895492040432A009C8B0E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FF58954B2040432A009C8B0E /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FF58954D2040432A009C8B0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF58954F2040432A009C8B0E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF5895502040432A009C8B0E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		FF58956620404A68009C8B0E /* SimpleTimerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTimerController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF5895062040432A009C8B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58951A2040432A009C8B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5895252040432A009C8B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58953D2040432A009C8B0E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF5895002040432A009C8B0E = {
+			isa = PBXGroup;
+			children = (
+				FF58950B2040432A009C8B0E /* SimpleTimer */,
+				FF5895202040432A009C8B0E /* SimpleTimerTests */,
+				FF58952B2040432A009C8B0E /* SimpleTimerUITests */,
+				FF5895352040432A009C8B0E /* SimpleTimer WatchKit App */,
+				FF5895442040432A009C8B0E /* SimpleTimer WatchKit Extension */,
+				FF58950A2040432A009C8B0E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF58950A2040432A009C8B0E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF5895092040432A009C8B0E /* SimpleTimer.app */,
+				FF58951D2040432A009C8B0E /* SimpleTimerTests.xctest */,
+				FF5895282040432A009C8B0E /* SimpleTimerUITests.xctest */,
+				FF5895312040432A009C8B0E /* SimpleTimer WatchKit App.app */,
+				FF5895402040432A009C8B0E /* SimpleTimer WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF58950B2040432A009C8B0E /* SimpleTimer */ = {
+			isa = PBXGroup;
+			children = (
+				FF58950C2040432A009C8B0E /* AppDelegate.swift */,
+				FF58950E2040432A009C8B0E /* ViewController.swift */,
+				FF5895102040432A009C8B0E /* Main.storyboard */,
+				FF5895132040432A009C8B0E /* Assets.xcassets */,
+				FF5895152040432A009C8B0E /* LaunchScreen.storyboard */,
+				FF5895182040432A009C8B0E /* Info.plist */,
+			);
+			path = SimpleTimer;
+			sourceTree = "<group>";
+		};
+		FF5895202040432A009C8B0E /* SimpleTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF5895212040432A009C8B0E /* SimpleTimerTests.swift */,
+				FF5895232040432A009C8B0E /* Info.plist */,
+			);
+			path = SimpleTimerTests;
+			sourceTree = "<group>";
+		};
+		FF58952B2040432A009C8B0E /* SimpleTimerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF58952C2040432A009C8B0E /* SimpleTimerUITests.swift */,
+				FF58952E2040432A009C8B0E /* Info.plist */,
+			);
+			path = SimpleTimerUITests;
+			sourceTree = "<group>";
+		};
+		FF5895352040432A009C8B0E /* SimpleTimer WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				FF5895362040432A009C8B0E /* Interface.storyboard */,
+				FF5895392040432A009C8B0E /* Assets.xcassets */,
+				FF58953B2040432A009C8B0E /* Info.plist */,
+			);
+			path = "SimpleTimer WatchKit App";
+			sourceTree = "<group>";
+		};
+		FF5895442040432A009C8B0E /* SimpleTimer WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF5895452040432A009C8B0E /* InterfaceController.swift */,
+				FF5895472040432A009C8B0E /* ExtensionDelegate.swift */,
+				FF5895492040432A009C8B0E /* NotificationController.swift */,
+				FF58954B2040432A009C8B0E /* ComplicationController.swift */,
+				FF58954D2040432A009C8B0E /* Assets.xcassets */,
+				FF58954F2040432A009C8B0E /* Info.plist */,
+				FF5895502040432A009C8B0E /* PushNotificationPayload.apns */,
+				FF58956620404A68009C8B0E /* SimpleTimerController.swift */,
+			);
+			path = "SimpleTimer WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF5895082040432A009C8B0E /* SimpleTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF58955B2040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer" */;
+			buildPhases = (
+				FF5895052040432A009C8B0E /* Sources */,
+				FF5895062040432A009C8B0E /* Frameworks */,
+				FF5895072040432A009C8B0E /* Resources */,
+				FF58955A2040432A009C8B0E /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5895342040432A009C8B0E /* PBXTargetDependency */,
+			);
+			name = SimpleTimer;
+			productName = SimpleTimer;
+			productReference = FF5895092040432A009C8B0E /* SimpleTimer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF58951C2040432A009C8B0E /* SimpleTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF58955E2040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */;
+			buildPhases = (
+				FF5895192040432A009C8B0E /* Sources */,
+				FF58951A2040432A009C8B0E /* Frameworks */,
+				FF58951B2040432A009C8B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF58951F2040432A009C8B0E /* PBXTargetDependency */,
+			);
+			name = SimpleTimerTests;
+			productName = SimpleTimerTests;
+			productReference = FF58951D2040432A009C8B0E /* SimpleTimerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF5895272040432A009C8B0E /* SimpleTimerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5895612040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimerUITests" */;
+			buildPhases = (
+				FF5895242040432A009C8B0E /* Sources */,
+				FF5895252040432A009C8B0E /* Frameworks */,
+				FF5895262040432A009C8B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF58952A2040432A009C8B0E /* PBXTargetDependency */,
+			);
+			name = SimpleTimerUITests;
+			productName = SimpleTimerUITests;
+			productReference = FF5895282040432A009C8B0E /* SimpleTimerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		FF5895302040432A009C8B0E /* SimpleTimer WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5895572040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer WatchKit App" */;
+			buildPhases = (
+				FF58952F2040432A009C8B0E /* Resources */,
+				FF5895562040432A009C8B0E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF5895432040432A009C8B0E /* PBXTargetDependency */,
+			);
+			name = "SimpleTimer WatchKit App";
+			productName = "SimpleTimer WatchKit App";
+			productReference = FF5895312040432A009C8B0E /* SimpleTimer WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FF58953F2040432A009C8B0E /* SimpleTimer WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF5895532040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer WatchKit Extension" */;
+			buildPhases = (
+				FF58953C2040432A009C8B0E /* Sources */,
+				FF58953D2040432A009C8B0E /* Frameworks */,
+				FF58953E2040432A009C8B0E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleTimer WatchKit Extension";
+			productName = "SimpleTimer WatchKit Extension";
+			productReference = FF5895402040432A009C8B0E /* SimpleTimer WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF5895012040432A009C8B0E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Paulo Alexandre Panucci";
+				TargetAttributes = {
+					FF5895082040432A009C8B0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FF58951C2040432A009C8B0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF5895082040432A009C8B0E;
+					};
+					FF5895272040432A009C8B0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FF5895082040432A009C8B0E;
+					};
+					FF5895302040432A009C8B0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					FF58953F2040432A009C8B0E = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = FF5895042040432A009C8B0E /* Build configuration list for PBXProject "SimpleTimer" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF5895002040432A009C8B0E;
+			productRefGroup = FF58950A2040432A009C8B0E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF5895082040432A009C8B0E /* SimpleTimer */,
+				FF58951C2040432A009C8B0E /* SimpleTimerTests */,
+				FF5895272040432A009C8B0E /* SimpleTimerUITests */,
+				FF5895302040432A009C8B0E /* SimpleTimer WatchKit App */,
+				FF58953F2040432A009C8B0E /* SimpleTimer WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF5895072040432A009C8B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5895172040432A009C8B0E /* LaunchScreen.storyboard in Resources */,
+				FF5895142040432A009C8B0E /* Assets.xcassets in Resources */,
+				FF5895122040432A009C8B0E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58951B2040432A009C8B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5895262040432A009C8B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58952F2040432A009C8B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF58953A2040432A009C8B0E /* Assets.xcassets in Resources */,
+				FF5895382040432A009C8B0E /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58953E2040432A009C8B0E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF58954E2040432A009C8B0E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF5895052040432A009C8B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF58950F2040432A009C8B0E /* ViewController.swift in Sources */,
+				FF58950D2040432A009C8B0E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5895192040432A009C8B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF5895222040432A009C8B0E /* SimpleTimerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF5895242040432A009C8B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF58952D2040432A009C8B0E /* SimpleTimerUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF58953C2040432A009C8B0E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF58954A2040432A009C8B0E /* NotificationController.swift in Sources */,
+				FF58954C2040432A009C8B0E /* ComplicationController.swift in Sources */,
+				FF5895482040432A009C8B0E /* ExtensionDelegate.swift in Sources */,
+				FF58956720404A68009C8B0E /* SimpleTimerController.swift in Sources */,
+				FF5895462040432A009C8B0E /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF58951F2040432A009C8B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5895082040432A009C8B0E /* SimpleTimer */;
+			targetProxy = FF58951E2040432A009C8B0E /* PBXContainerItemProxy */;
+		};
+		FF58952A2040432A009C8B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5895082040432A009C8B0E /* SimpleTimer */;
+			targetProxy = FF5895292040432A009C8B0E /* PBXContainerItemProxy */;
+		};
+		FF5895342040432A009C8B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF5895302040432A009C8B0E /* SimpleTimer WatchKit App */;
+			targetProxy = FF5895332040432A009C8B0E /* PBXContainerItemProxy */;
+		};
+		FF5895432040432A009C8B0E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF58953F2040432A009C8B0E /* SimpleTimer WatchKit Extension */;
+			targetProxy = FF5895422040432A009C8B0E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF5895102040432A009C8B0E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5895112040432A009C8B0E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF5895152040432A009C8B0E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5895162040432A009C8B0E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		FF5895362040432A009C8B0E /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF5895372040432A009C8B0E /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF5895512040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF5895522040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF5895542040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SimpleTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FF5895552040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "SimpleTimer WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		FF5895582040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SimpleTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		FF5895592040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = SimpleTimer_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleTimer WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		FF58955C2040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF58955D2040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF58955F2040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Debug;
+		};
+		FF5895602040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SimpleTimer.app/SimpleTimer";
+			};
+			name = Release;
+		};
+		FF5895622040432A009C8B0E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTimer;
+			};
+			name = Debug;
+		};
+		FF5895632040432A009C8B0E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SimpleTimerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pauloapanucci.SimpleTimerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SimpleTimer;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF5895042040432A009C8B0E /* Build configuration list for PBXProject "SimpleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5895512040432A009C8B0E /* Debug */,
+				FF5895522040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5895532040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5895542040432A009C8B0E /* Debug */,
+				FF5895552040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5895572040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5895582040432A009C8B0E /* Debug */,
+				FF5895592040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF58955B2040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF58955C2040432A009C8B0E /* Debug */,
+				FF58955D2040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF58955E2040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF58955F2040432A009C8B0E /* Debug */,
+				FF5895602040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF5895612040432A009C8B0E /* Build configuration list for PBXNativeTarget "SimpleTimerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF5895622040432A009C8B0E /* Debug */,
+				FF5895632040432A009C8B0E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FF5895012040432A009C8B0E /* Project object */;
+}
